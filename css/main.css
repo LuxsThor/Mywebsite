@@ -1,0 +1,73 @@
+/* HEADER STYLES */
+.header {
+  background-color: black;
+  height: 15vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.header-logo {
+  box-sizing: border-box;
+  height: 15vh;
+  position: absolute;
+  width: 15vh;
+  top: 0px;
+  left: 0px;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: orange;
+}
+.header-logo img {
+  width: 15vh;
+}
+.header-nav {
+  float: right;
+  padding: 5.5vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.header-nav > li ~ li {
+  border-left: 1px solid green;
+  padding-left: 1em;
+}
+.header-nav a {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header-nav a:hover,
+.header-nav a:active {
+  color: yellow;
+}
+.header-nav > li:first-child a {
+  color: yellow;
+}
+.header-nav > li:first-child a:hover {
+  color: white;
+}
+
+html, body {
+  margin: 0;
+  padding: 5px;
+}
+
+.header-name h1,h3 {
+  color: white;
+  margin: 0;
+}
+
+.header-name {
+  position: relative;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  top: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
