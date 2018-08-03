@@ -1,3 +1,14 @@
+/*big business styles */
+body {
+  box-shadow: 0 0 0 30px black inset;
+  padding: 0 30px;
+  margin:0;
+}
+
+h1,h2,h3 {
+  margin: 0;
+}
+
 /* HEADER STYLES */
 .header {
   background-color: black;
@@ -24,7 +35,7 @@
 }
 .header-nav {
   float: right;
-  padding: 5.5vh 60px 0 0;
+  padding: 5.5vh 0 0 0;
 }
 .header-nav > li {
   display: inline-block;
@@ -52,11 +63,6 @@
   color: white;
 }
 
-html, body {
-  margin: 0;
-  padding: 5px;
-}
-
 .header-name h1,h3 {
   color: white;
   margin: 0;
@@ -70,4 +76,64 @@ html, body {
   top: 50%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* HERO STYLES */
+.hero {
+  background-size: cover;
+  box-sizing: border-box;
+  height: 85vh;
+  padding-top: 10vh;
+  background-image: url(../images/ship.jpg);
+  background-position: center top;
+}
+
+/* CV STYLES */
+
+.CVpic {
+  width: 25vh;
+  height: 25vh;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  border-radius: 50%;
+  top: 30vh;
+}
+
+
+.Profile-hero {
+  text-align: center;
+  position: relative;
+  height: 60vh;
+}
+
+.Title {
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.Title h1 {
+
+}
+
+.Details {
+  position: absolute;
+  left: 10%;
+  width: 30%;
+}
+
+.About {
+  width: 30%;
+  position: absolute;
+  right: 10%;
+}
+
+/* CV stylesheet */
+
+.CV {
+  background-color: #c7dbfc;
+  position: flex;
+  height: 100vh;
 }
