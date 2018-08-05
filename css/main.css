@@ -132,8 +132,29 @@ h1,h2,h3 {
 
 /* CV stylesheet */
 
-.CV {
-  background-color: #c7dbfc;
-  position: flex;
-  height: 100vh;
+.uzh-logo {
+  height: 20vh;
 }
+
+.unibe-logo {
+  height: 20vh;
+}
+
+
+.cv {
+        display: flex;
+        height: 100vh;
+        background-color: lime;
+      }
+
+      .education {
+        flex: 1 1 auto;
+        height: 100vh;
+        width: 50%;
+      }
+
+      .work {
+        flex: 1 1 auto;
+        height: 100vh;
+        width: 50%;
+      }
