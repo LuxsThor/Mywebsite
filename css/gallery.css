@@ -1,0 +1,62 @@
+.Gallery {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+
+.selection {
+  flex: 0 1 15em;
+  overflow: scroll;
+  text-align: center;
+}
+
+.view {
+  flex: 1;
+  text-align: center;
+}
+
+.description {
+  flex: 0, 1, 20em;
+}
+
+.Gallery > * {
+  border-left: 2px solid grey;
+}
+
+.col1, .col2, .col3 {
+  padding: 2em;
+}
+
+.current img {
+  box-shadow: 0 0 0 5px yellow;
+}
+
+.selection img {
+  box-sizing: border-box;
+  box-shadow: 0 0 0 5px transparent;
+  display: inline-block;
+  margin: 0 0 10px;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+  width: 80%%;
+}
+
+.selection img:hover {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 5px 5px 5px yellow;
+
+}
+
+.selection .current img {
+  opacity: 1;
+  box-shadow: 5px 5px 5px yellow;
+}
+
+.gallery-photo {
+  position: relative;
+}
+
+.gallery-photo img {
+  height: 85vh;
+}

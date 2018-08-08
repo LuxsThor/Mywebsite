@@ -83,9 +83,15 @@ h1,h2,h3 {
   background-size: cover;
   box-sizing: border-box;
   height: 85vh;
-  padding-top: 10vh;
   background-image: url(../images/ship.jpg);
   background-position: center top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  color: white;
 }
 
 /* CV STYLES */
@@ -158,3 +164,35 @@ h1,h2,h3 {
         height: 100vh;
         width: 50%;
       }
+ /*footer style */
+
+.footer {
+  height: 25vh;
+  background-color: black;
+  position: relative;
+}
+
+.footer-logo {
+  height: 15vh;
+  width: 15vh;
+}
+
+.footer-logo img {
+  height: 15vh;
+  width: 15vh:;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-name {
+  color: white;
+  text-align: center;
+}
+
+.Contact a {
+  float: right;
+  color: yellow;
+  margin: 5px;
+}
