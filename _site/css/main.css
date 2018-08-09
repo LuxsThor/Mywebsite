@@ -1,3 +1,20 @@
+
+/*big business styles */
+body {
+  font-family: helvetica, arial, sans;
+}
+
+
+body {
+  box-shadow: 0 0 0 30px black inset;
+  padding: 0 30px;
+  margin:0;
+}
+
+h1,h2,h3 {
+  margin: 0;
+}
+
 /* HEADER STYLES */
 .header {
   background-color: black;
@@ -24,7 +41,7 @@
 }
 .header-nav {
   float: right;
-  padding: 5.5vh 60px 0 0;
+  padding: 5.5vh 0 0 0;
 }
 .header-nav > li {
   display: inline-block;
@@ -52,11 +69,6 @@
   color: white;
 }
 
-html, body {
-  margin: 0;
-  padding: 5px;
-}
-
 .header-name h1,h3 {
   color: white;
   margin: 0;
@@ -70,4 +82,123 @@ html, body {
   top: 50%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* HERO STYLES */
+.hero {
+  background-size: cover;
+  box-sizing: border-box;
+  height: 85vh;
+  background-image: url(../images/ship.jpg);
+  background-position: center top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  color: white;
+}
+
+/* CV STYLES */
+
+.CVpic {
+  width: 25vh;
+  height: 25vh;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  border-radius: 50%;
+  top: 30vh;
+}
+
+
+.Profile-hero {
+  text-align: center;
+  position: relative;
+  height: 60vh;
+}
+
+.Title {
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.Title h1 {
+
+}
+
+.Details {
+  position: absolute;
+  left: 10%;
+  width: 30%;
+}
+
+.About {
+  width: 30%;
+  position: absolute;
+  right: 10%;
+}
+
+/* CV stylesheet */
+
+.uzh-logo {
+  height: 20vh;
+}
+
+.unibe-logo {
+  height: 20vh;
+}
+
+
+.cv {
+        display: flex;
+        height: 100vh;
+        background-color: lime;
+      }
+
+      .education {
+        flex: 1 1 auto;
+        height: 100vh;
+        width: 50%;
+      }
+
+      .work {
+        flex: 1 1 auto;
+        height: 100vh;
+        width: 50%;
+      }
+ /*footer style */
+
+.footer {
+  height: 25vh;
+  background-color: black;
+  position: relative;
+}
+
+.footer-logo {
+  height: 15vh;
+  width: 15vh;
+}
+
+.footer-logo img {
+  height: 15vh;
+  width: 15vh:;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-name {
+  color: white;
+  text-align: center;
+}
+
+.Contact a {
+  float: right;
+  color: yellow;
+  margin: 5px;
 }
