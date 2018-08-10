@@ -1,6 +1,6 @@
 .Gallery {
   display: flex;
-  height: auto;
+  height: 100vh;
   width: 100%;
 }
 
@@ -15,8 +15,8 @@
   text-align: center;
 }
 
-.description {
-  flex: 0, 1, 20em;
+.photo-description {
+  flex: 0 1 20em;
 }
 
 .Gallery > * {
@@ -58,5 +58,5 @@
 }
 
 .gallery-photo img {
-  height: 85vh;
+
 }

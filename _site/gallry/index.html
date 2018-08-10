@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/gallery.css">
   <link rel="stylesheet" href="../css/blog.css">
+  <script type="text/javascript" src="../js/gallery.js"></script>
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+     activateGallery();
+   });
+ </script>
 </head>
 
   <body>
@@ -32,24 +38,52 @@
     <body>
 
 <div class="Gallery">
-  <div class="selection">
+  <div class="selection" id="selection">
     <div class="current">
-      <img src="http://via.placeholder.com/150x150" alt="">
+      <img src="/images/small/beach.jpg" alt="Venice Beach"
+           data-large-version="/images/large/beach.jpg"
+           data-title="Venice Beach"
+           data-description="An overhead shot of Venice Beach, California.">
     </div>
-    <div class="">
-      <img src="http://via.placeholder.com/150x150" alt="">
+    <div>
+      <img src="/images/small/boat.jpg" alt="Moorea catamaran"
+           data-large-version="/images/large/boat.jpg"
+           data-title="Catamaran"
+           data-description="A catamaran on Moorea lagoon, French Polynesia.">
+    </div>
+    <div>
+      <img src="/images/small/bug.jpg" alt="green bug"
+           data-large-version="/images/large/bug.jpg"
+           data-title="Bug"
+           data-description="A green leaf insect.">
+    </div>
+    <div>
+      <img src="/images/small/desert.jpg" alt="desert vista"
+           data-large-version="/images/large/desert.jpg"
+           data-title="Desert vista"
+           data-description="A view of Joshua Tree National Park.">
+    </div>
+    <div>
+      <img src="/images/small/disney.jpg" alt="Walt Disney Concert Hall"
+           data-large-version="/images/large/disney.jpg"
+           data-title="Walt Disney Concert Hall"
+           data-description="Walt Disney Concert Hall in downtown Los Angeles.">
+    </div>
+    <div>
+      <img src="/images/small/fish.jpg" alt="fish"
+           data-large-version="/images/large/fish.jpg"
+           data-title="Fish"
+           data-description="A group of koi in a Japanese garden.">
     </div>
   </div>
   <div class="view">
     <div class="gallery-photo">
-      <img src="http://via.placeholder.com/350x350" alt="a project picture">
+      <img src="/images/large/beach.jpg" alt="a nice beach">
     </div>
   </div>
-  <div class="description">
-    <div class="photo-description">
-      <h3>title</h3>
-      <p>a little bit about this project</p>
-    </div>
+  <div class="photo-description">
+      <h3 class="title">title</h3>
+      <p class="description">a nice boat</p>
   </div>
 </div>
 
