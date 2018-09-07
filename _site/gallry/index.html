@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
   integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
   crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/example/css/main.css">
   <link rel="stylesheet" href="/example/css/gallery.css">
   <link rel="stylesheet" href="/example/css/blog.css">
@@ -32,71 +33,43 @@
 <h1>LuxsThor</h1>
 <h3>WebSmith</h3>
 </div>
-<a href="/" class="header-logo">
+<a href="/example/index.html" class="header-logo">
 <img src="/example/images/sclogocrop.png" alt="Study conquest logo">
 </a>
 </header>
 
 
 
-    <body>
-
-<div class="Gallery">
-  <div class="selection" id="selection">
-    <div class="current">
-      <img src="/example/images/small/beach.jpg" alt="Venice Beach"
-           data-large-version="/images/large/beach.jpg"
-           data-title="Venice Beach"
-           data-description="An overhead shot of Venice Beach, California.">
-    </div>
-    <div>
-      <img src="/images/small/boat.jpg" alt="Moorea catamaran"
-           data-large-version="/images/large/boat.jpg"
-           data-title="Catamaran"
-           data-description="A catamaran on Moorea lagoon, French Polynesia.">
-    </div>
-    <div>
-      <img src="/images/small/bug.jpg" alt="green bug"
-           data-large-version="/images/large/bug.jpg"
-           data-title="Bug"
-           data-description="A green leaf insect.">
-    </div>
-    <div>
-      <img src="/images/small/desert.jpg" alt="desert vista"
-           data-large-version="/images/large/desert.jpg"
-           data-title="Desert vista"
-           data-description="A view of Joshua Tree National Park.">
-    </div>
-    <div>
-      <img src="/images/small/disney.jpg" alt="Walt Disney Concert Hall"
-           data-large-version="/images/large/disney.jpg"
-           data-title="Walt Disney Concert Hall"
-           data-description="Walt Disney Concert Hall in downtown Los Angeles.">
-    </div>
-    <div>
-      <img src="/images/small/fish.jpg" alt="fish"
-           data-large-version="/images/large/fish.jpg"
-           data-title="Fish"
-           data-description="A group of koi in a Japanese garden.">
+    <div class="gallery col-three">
+  <div class="col col-nav gallery-thumbs" id="gallery-thumbs">
+      <div class="current">
+        <img src="/example/images/ship.jpg" alt="Project 1 photo"
+            data-large-version="/example/images/ship.jpg"
+            data-title="Project 1"
+           data-description="some things i will do on a future project">
+      </div>
+      <div>
+      <img src="/example/images/shark.jpg" alt="Project 2 photo"
+           data-large-version="/example/images/shark.jpg"
+            data-title="Project 2"
+            data-description="Some of description of future work">
+     </div>
+  </div>
+  <div class="col col-content">
+    <div class="gallery-photo" id="gallery-photo">
+      <img src="/example/images/ship.jpg" alt="Image title 1">
     </div>
   </div>
-  <div class="view">
-    <div class="gallery-photo">
-      <img src="/images/large/beach.jpg" alt="a nice beach">
-    </div>
-  </div>
-  <div class="photo-description">
-      <h3 class="title">title</h3>
-      <p class="description"> a nice boat</p>
+  <div class="col col-aside gallery-info" id="gallery-info">
+    <h3 class="title">Project 1</h3>
+    <p class="description">Stuff I did on a feature work project</p>
   </div>
 </div>
-
-</body>
 
 
 
     <div class = "footer">
-  <a href="/" class="footer-logo">
+  <a href="/example/index.html" class="footer-logo">
     <img src="/example/images/sclogocrop.png" alt="mylogo">
   </a>
   <div class="footer-name">
@@ -108,13 +81,15 @@
 
   </div>
   <div class="social-list">
-        <a href="https://www.youtube.com/channel/UCuRCFlcRrof6cf8YgeQE53Q?view_as=subscriber" class="social-link">
+        <a href="https://www.youtube.com/channel/UCuRCFlcRrof6cf8YgeQE53Q?view_as=subscriber"
+        target="blank" class="social-link">
           <i class="fab fa-youtube"></i>
         </a>
-        <a href="https://github.com/LuxsThor" class="social-link">
+        <a href="https://github.com/LuxsThor" target="blank" class="social-link">
           <i class="fab fa-github-square"></i>
         </a>
-        <a href="https://www.facebook.com/lucas.thorbecke?ref=bookmarks" class="social-link">
+        <a href="https://www.facebook.com/lucas.thorbecke?ref=bookmarks"
+        target="blank" class="social-link">
           <i class="fab fa-facebook-f"></i>
         </a>
   </div>

@@ -2,12 +2,12 @@
 // The main task is to attach an event listener to each image in the gallery
 // and respond appropriately on click.
 function activateGallery() {
-  let thumbnails = document.querySelector("#selection").querySelectorAll("img");
-  let mainImage = document.querySelector(".view img");
+  let thumbnails = document.querySelectorAll("#gallery-thumbs > div > img");
+  let mainImage  = document.querySelector("#gallery-photo img");
 
   thumbnails.forEach(function(thumbnail) {
     thumbnail.addEventListener("click", function() {
-      // Set clicked image as main image.
+      // Set clicked image as display image.
       let newImageSrc = thumbnail.dataset.largeVersion;
       mainImage.setAttribute("src", newImageSrc);
 
@@ -15,7 +15,8 @@ function activateGallery() {
       document.querySelector(".current").classList.remove("current");
       thumbnail.parentNode.classList.add("current");
 
-      let galleryInfo = document.querySelector(".photo-description");
+      // Update image info.
+      let galleryInfo = document.querySelector("#gallery-info");
       let title       = galleryInfo.querySelector(".title");
       let description = galleryInfo.querySelector(".description");
 

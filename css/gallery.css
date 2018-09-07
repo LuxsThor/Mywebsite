@@ -1,78 +1,89 @@
-.Gallery {
+/* COLUMN STYLES */
+.col-three {
   display: flex;
-  height: 100vh;
-  width: 100%;
 }
-
-.selection {
-  flex: 0 1 20em;
-  overflow: scroll;
-  text-align: center;
-}
-
-.view {
-  flex: 1;
-  text-align: center;
-}
-
-.photo-description {
-  flex: 0 1 20em;
-}
-
-.Gallery > * {
-  border-left: 2px solid grey;
-}
-
-.col1, .col2, .col3 {
+.col {
+  box-sizing: border-box;
   padding: 2em;
 }
 
-.current img {
-  box-shadow: 0 0 0 5px yellow;
+.col h3 {
+  color: black;
+}
+.col-three .col ~ .col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+.col-three .col-content {
+  flex: 1;
+}
+.col-three .col-aside {
+  flex: 0 1 20em
 }
 
-.selection img {
+
+/* GALLERY STYLES */
+.gallery-thumbs {
+  height: 90vh;
+  overflow: scroll;
+}
+.gallery-thumbs > div {
+  cursor: pointer;
+}
+.gallery-thumbs img {
   box-sizing: border-box;
   box-shadow: 0 0 0 5px transparent;
   display: inline-block;
   margin: 0 0 10px;
   opacity: 0.5;
   transition: all 0.5s ease-in-out;
-  width: 80%%;
+  width: 100%;
 }
-
-.selection img:hover {
+.gallery-thumbs img:hover {
   opacity: 1;
-  transition: all 0.5s ease-in-out;
-  box-shadow: 5px 5px 5px yellow;
-  cursor: pointer;
-
 }
-
-.selection .current img {
+.gallery-thumbs .current img {
+  box-shadow: 0 0 0 5px #ed6e2f;
   opacity: 1;
-  box-shadow: 5px 5px 5px yellow;
 }
-
 .gallery-photo {
   position: relative;
 }
-
-.selection img {
-  box-sizing: border-box;
-  box-shadow: 0 0 0 5px transparent;
-  display: inline-block;
-  opacity: 0.5;
-  transition: all 0.5s ease-in-out;
-  width: 85%;
-  text-align: center;
+.gallery-photo img {
+  width: 100%;
 }
-
-.photo-description {
+.gallery-info {
   font-size: 0.8rem;
-  text-align: center;
 }
-.photo-description h3 {
+.gallery-info h3 {
   margin-bottom: 1em;
-  color: black;
+}
+
+@media (max-width: 800px) {
+  /* GALLERY STYLES */
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery .col {
+    padding: 1em;
+  }
+  .gallery .gallery-thumbs {
+    flex: 1;
+    height: auto;
+    white-space: nowrap;
+    width: 100vw;
+  }
+  .gallery-thumbs > div {
+    display: inline-block;
+  }
+  .gallery-thumbs img {
+    height: 7vh;
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  .gallery .gallery-info {
+    flex: 1;
+  }
 }

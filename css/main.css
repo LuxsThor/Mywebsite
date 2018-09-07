@@ -6,7 +6,7 @@ body {
 
 
 body {
-  box-shadow: 0 0 0 30px black inset;
+  box-shadow: 0 0 0 20px black inset;
   padding: 0 30px;
   margin:0;
 }
@@ -96,6 +96,16 @@ h1,h2,h3 {
   justify-content: center;
 }
 
+.hero:after {
+  bottom: 2vh;
+  color: #fff;
+  content: "﹀";
+  font-size: 36px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
 .hero-content {
   color: white;
 }
@@ -120,6 +130,7 @@ h1,h2,h3 {
   height: 60vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  width: 100%;
 }
 
 .Title {
@@ -203,7 +214,7 @@ h1,h2,h3 {
 
       .vl {
           border-left: 6px solid white;
-          height: 170vh;
+          height: auto;
       }
 .cv h3 {
   margin-top: 3vh;
@@ -278,6 +289,6 @@ h1,h2,h3 {
   position: absolute;
   right: 5vh;
   bottom: 5vh;
-
-
 }
+
+/* responsive stuff for the homepage*/
