@@ -118,28 +118,29 @@ h1,h2,h3 {
   text-align: center;
   position: relative;
   height: 60vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .Title {
   text-align: center;
-  padding-top: 5vh;
   padding-bottom: 5vh;
 }
 
 .Title h1 {
-
+  margin-bottom: 5vh;
 }
 
 .Details {
   position: absolute;
-  left: 10%;
+  left: 7%;
   width: 30%;
 }
 
 .About {
   width: 30%;
   position: absolute;
-  right: 10%;
+  right: 7%;
 }
 
 /* CV stylesheet */
@@ -152,36 +153,79 @@ h1,h2,h3 {
   height: 20vh;
 }
 
+.suvretta_logo {
+  height: 20vh;
+}
 
+.companoo_logo {
+  width: 300px;
+}
+
+.sss_ybrig_logo {
+  height: 20vh;
+}
+
+.parttime-logo {
+  height: 20vh;
+}
+
+.cv-logo {
+  margin: 5vh 0
+}
+.cv h2 {
+  margin-top: 5vh;
+  color: white;
+}
+
+.parttime {
+  margin-bottom: 5vh;
+}
 .cv {
         display: flex;
-        height: 100vh;
-        background-color: lime;
+        height: 170vh;
+        background-color: #3382FF;
       }
 
       .education {
         flex: 1 1 auto;
         height: 100vh;
         width: 50%;
+        text-align: right;
+        padding-right: 5vh;
       }
 
       .work {
         flex: 1 1 auto;
         height: 100vh;
         width: 50%;
+        padding-left: 5vh;
       }
+
+      .vl {
+          border-left: 6px solid white;
+          height: 170vh;
+      }
+.cv h3 {
+  margin-top: 3vh;
+}
+
+
  /*footer style */
 
 .footer {
-  height: 25vh;
+  height: 40vh;
   background-color: black;
   position: relative;
+
 }
 
 .footer-logo {
   height: 15vh;
   width: 15vh;
+  box-sizing: border-box;
 }
+
+
 
 .footer-logo img {
   height: 15vh;
@@ -194,11 +238,46 @@ h1,h2,h3 {
 
 .footer-name {
   color: white;
+  left: auto;
+  right: auto;
   text-align: center;
+  padding-top: 5vh;
+}
+
+
+.footer-logo:hover,
+.footer-logo:active {
+  background-color: orange;
 }
 
 .Contact a {
   float: right;
   color: yellow;
   margin: 5px;
+}
+
+.social-link {
+  background: grey;
+  border-radius: 99px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: helvetica, arial, sans;
+  font-size: 1.7em;
+  font-weight: bold;
+  height: 1.5em;
+  line-height: 1;
+  padding-top: 0.25em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 1.5em;
+}
+
+.social-list {
+  position: absolute;
+  right: 5vh;
+  bottom: 5vh;
+
+
 }
