@@ -292,3 +292,65 @@ h1,h2,h3 {
 }
 
 /* responsive stuff for the homepage*/
+
+@media (max-width: 800px) {
+  /* HOME STYLES CV section */
+  .cv {
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .work {
+    flex: 1;
+    width: auto;
+    height: auto;
+    font-size: 1.3rem;
+  }
+
+  .education {
+    float: left;
+    font-size: 1.3rem;
+    width: auto;
+    height: auto;
+  }
+
+  .header-name {
+    display: none;
+  }
+
+  @media (max-width: 650px) {
+    .Profile-hero {
+      display: flex;
+      flex-direction: column;
+      height: 200vh;
+      flex-wrap: wrap;
+      margin: 0;
+
+    }
+
+    .Title {
+      order: 1;
+      width: 100%;
+      height: auto;
+
+    }
+
+    .CVpic {
+      order: 2;
+    }
+
+    .Details {
+      float: none;
+      width: 100%;
+      height: auto;
+      font-size: 1.3rem;
+
+    }
+
+    .About {
+      float: none;
+      width: 100%;
+      height: auto;
+      font-size: 1.3rem;
+    }
+  }
